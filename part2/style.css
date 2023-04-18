@@ -1,1 +1,11 @@
 .table tr{vertical-align: middle;}
+.ads-left {
+  display:none;
+}
+@media all and (min-width:768px) {
+  .ads-left {
+    display:block;
+    position: fixed;
+    left: 10px;
+  }
+}
