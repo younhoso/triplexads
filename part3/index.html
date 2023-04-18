@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>나만의 일기장</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/triplexads/part3/style.css">
+    <link rel="stylesheet" href="/part3/style.css">
 </head>
 <body>
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
@@ -23,10 +23,7 @@
 										<a class="nav-link" href="/triplexads/part1/index.html">사칙연산 계산기</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="/triplexads/part2/index.html">대출이자 계산기</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active" href="/triplexads/part3/index.html">나만의 일기장</a>
+										<a class="nav-link active" href="/triplexads/part2/index.html">대출이자 계산기</a>
 								</li>
 						</ul>
 						</div>
@@ -42,8 +39,14 @@
 						</div>
 					</div>
 					<div class="col-md">
-						<small class="select">오늘 기분은 어땠나요?</small>
-						<div id="emoji"></div>
+						<div class="form-floating">
+							<select class="form-select" id="mood">
+								<option value="행복">행복</option>
+								<option value="보통">보통</option>
+								<option value="슬픔">슬픔</option>
+							</select>
+							<label for="mood">오늘 기분은 어땠나요?</label>
+						</div>
 					</div>
 				</div>
 				<div class="form-floating mb-3">
@@ -51,7 +54,7 @@
 					<label for="floatingTextarea2">오늘 있었던 일을 말해주세요.</label>
 				</div>
 
-				<button type="button" id="save" class="w-100 pt-3 pb-3 btn btn-dark mb-5">저장하기</button>
+				<button type="button" id="save" class="w-100 btn btn-dark mb-5">저장하기</button>
 
 				<div class="list-group" id="result">
 					<!-- Template 추가 영역 -->
@@ -60,7 +63,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/triplexads/part3/emoji.min.js"></script>
-		<script src="/triplexads/part3/script.js"></script>
+    <script src="/part3/script.js"></script>
 </body>
 </html>
