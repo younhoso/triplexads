@@ -2,6 +2,10 @@
   display:none;
 }
 
+.ads-rigth {
+  display:none;
+}
+
 @media all and (min-width:768px) {
   .container {
     max-width: 960px;
@@ -13,5 +17,11 @@
     display:block;
     position: fixed;
     left: 10px;
+  }
+
+  .ads-rigth {
+    display:block;
+    position: fixed;
+    rigth: 10px;
   }
 }
