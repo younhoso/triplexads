@@ -2,7 +2,7 @@
   display:none;
 }
 
-.ads-rigth {
+.ads-right {
   display:none;
 }
 
@@ -19,9 +19,9 @@
     left: 10px;
   }
 
-  .ads-rigth {
+  .ads-right {
     display:block;
     position: fixed;
-    rigth: 10px;
+    right: 10px;
   }
 }
