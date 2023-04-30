@@ -1,5 +1,4 @@
-html,
-body {
+html,body {
   padding: 0;
   margin: 0;
 }
@@ -7,18 +6,44 @@ body {
   margin: 0;
   background: #009578;
 }
-button,
-textarea {
+button,textarea {
   outline: none;
   border: 0;
 }
 
-ul,
-li {
+ul,li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/* kakao 광고 */
+.ads-left {
+  display:none;
+}
+.ads-right {
+  display:none;
+}
+
+@media all and (min-width:768px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width:1440px) {
+  .ads-left {
+    display:block;
+    position: fixed;
+    left: 10px;
+  }
+  .ads-right {
+    display:block;
+    position: fixed;
+    right: 10px;
+  }
+}
+/* kakao 광고 */
 
 .wrapper {
   max-width: 960px;
@@ -67,9 +92,13 @@ li {
   border-radius: 10px;
   resize: none;
 }
-
+.fontSize {
+  font-size: 14px;
+}
 .add-note {
   width: 100%;
+  height: 80px;
+  line-height: 80px;
   border: none;
   outline: none;
   background: rgba(0, 0, 0, 0.1);
@@ -84,6 +113,8 @@ li {
 .add-note:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+
+.txt {text-align: center;}
 
 .delet {
   width: 40px;
